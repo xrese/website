@@ -1,0 +1,11 @@
+title: XR|ESE
+author: Isaac Griffith
+email: grifisaa@isu.edu
+description: > # this means to ignore newlines until "baseurl:"
+  eXtended Reality and Empirical Software Engineering Laboratory
+
+twitter_username:
+github_username:  grifisaa
+
+sass:
+    style: compressed

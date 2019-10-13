@@ -1,0 +1,72 @@
+---
+layout: default
+---
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text"><span style="color: #F47920;">XR</span><span style="color: #000;"><b><span style="color: #828282">|</span>  ESE</b></span></h1>
+      <div class="row center">
+        <h5 class="header col s12 light">{{ content }}</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">3d_rotation</i></h2>
+            <h5 class="center">eXtended Reality</h5>
+
+            <p class="light">We are currently exploring the design and architecture of VR|AR|MR applications. Our focus is on the application of the Unity Framework with the HTC Vive, Occulus Quest, Magic Leap and Smart Phones.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Empirical Software Engineering</h5>
+
+            <p class="light">A primary focus of this lab is the empirical evaluation of software engineering techniques, tools, practices, and concepts as found in practice. To accomplish this goal we employ techniques from computer science, statistics, data science, and machine learning.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">transform</i></h2>
+            <h5 class="center">Design Science</h5>
+
+            <p class="light">An additional focus of this lab is the exploration the choices engineers and designers make when designing a new product, user interface, etc. It our intention to explore the effects that such design decisions have on the quality in use of the product developed.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+    <div style="background: #ddd">
+    <div class="container last-post">
+    <section>
+        <h5>Latest Posts</h5>
+        <ul class="collection">
+        {% for post in site.posts %}
+        <li class="collection-item avatar">
+          {% assign date_format = site.minima.date_format | default: "%m/%d" %}
+          <div class="date-post">{{ post.date | date: date_format }}</div>
+          <span class="title"><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></span>
+          <p>
+             {{ post.content | truncatewords: 10 }}
+          </p>
+          <a href="{{ post.url | relative_url }}" class="secondary-content"><i class="material-icons">navigate_next</i></a>
+        </li>
+        {% endfor %}
+        </ul>
+    </section>
+    </div>
+</div>
+
+  </div>
